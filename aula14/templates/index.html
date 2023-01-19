@@ -24,10 +24,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {%for e in estudantes %}
+                        {% for e in estudantes %}
                         <tr>
-                            <td>e.nome</td>
-                            <td>e.idade</td>
+                            <td>{{e.nome}}</td>
+                            <td>{{e.idade}}</td>
                             <td>
                                 <a href="/edit/{{e.id}}">Editar</a> |
                                 <a href="/delete/{{e.id}}">Excluir</a>
