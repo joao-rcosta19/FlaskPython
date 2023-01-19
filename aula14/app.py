@@ -15,6 +15,7 @@ class Estudantes(db.Model):
         self.nome = nome
         self.idade = idade
 
+
 @app.route('/')
 def index():
     estudantes = Estudantes.query.all()
